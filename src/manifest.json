@@ -1,10 +1,11 @@
 {
-  "name": "thoughts-kit4web",
-  "description": "thoughts-kit4web",
+  "name": "example-extension",
+  "short_name": "example-extension",
+  "description": "example-extension",
   "version": "0.1.0",
   "manifest_version": 3,
   "author": "cigaret",
-  "homepage_url": "https://app.thoughtsdaily.cn/bookmarklet",
+  "homepage_url": "https://example.com/",
   "icons": {
     "128": "./statics/images/thoughts-daily.png",
     "16": "./statics/images/thoughts-daily.png",
@@ -45,9 +46,12 @@
     ]
   },
   "commands": {},
+  "omnibox": {
+    "keyword": "thoughts"
+  },
   "action": {
     "default_icon": "./statics/images/thoughts-daily.png",
-    "default_title": "Thoughts Bookmarklet 附属扩展",
+    "default_title": "Popup Title!",
     "default_popup": "./popup.html"
   },
   "options_page": "./options.html",
