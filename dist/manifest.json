@@ -1,0 +1,58 @@
+{
+  "name": "thoughts-kit4web",
+  "description": "thoughts-kit4web",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "author": "cigaret",
+  "homepage_url": "https://app.thoughtsdaily.cn/bookmarklet",
+  "icons": {
+    "128": "./statics/images/thoughts-daily.png",
+    "16": "./statics/images/thoughts-daily.png",
+    "48": "./statics/images/thoughts-daily.png"
+  },
+  "permissions": [
+    "tabs",
+    "bookmarks",
+    "contextMenus",
+    "declarativeContent",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "optional_permissions": [],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "*"
+      ],
+      "matches": [],
+      "extension_ids": [],
+      "use_dynamic_url": false
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; script-src 'self'; connect-src * data: blob: filesystem:; style-src * data: 'unsafe-inline'; img-src 'self' data:; frame-src 'self' data:; font-src * data:; media-src * data: blob: filesystem:;"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "commands": {},
+  "action": {
+    "default_icon": "./statics/images/thoughts-daily.png",
+    "default_title": "Thoughts Bookmarklet 附属扩展",
+    "default_popup": "./popup.html"
+  },
+  "options_page": "./options.html",
+  "devtools_page": "./devtools.html",
+  "background": {
+    "service_worker": "./background.js"
+  }
+}
