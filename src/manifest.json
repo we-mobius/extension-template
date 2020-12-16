@@ -58,5 +58,17 @@
   "devtools_page": "./devtools.html",
   "background": {
     "service_worker": "./background.js"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false,
+      "js": [
+        "./content.js"
+      ]
+    }
+  ]
 }

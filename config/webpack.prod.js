@@ -21,6 +21,7 @@ export const getProductionConfig = () => ({
     static: './src/static.js',
     index: './src/index.js',
     background: './src/background.js',
+    content: './src/content.js',
     popup: './src/popup.js',
     options: './src/options.js',
     devtools: './src/devtools.js'
