@@ -5,10 +5,10 @@ import CopyPlugin from 'copy-webpack-plugin'
 import path from 'path'
 
 const PATHS = {
-  output: rootResolvePath('dev')
+  output: rootResolvePath('build')
 }
 
-export const getDevelopmentConfig = () => ({
+export const getBuildConfig = () => ({
   mode: 'development',
   // NOTE: entry sort matters style cascading
   entry: {
