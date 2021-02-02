@@ -22,6 +22,7 @@ export const getProductionConfig = () => ({
     index: './src/index.js',
     background: './src/background.js',
     content: './src/content.js',
+    inject: './src/inject.js',
     popup: './src/popup.js',
     options: './src/options.js',
     devtools: './src/devtools.js'
@@ -36,13 +37,14 @@ export const getProductionConfig = () => ({
       {
         test: /\.css$/i,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              // 添加在 CSS 文件中引用的其它资源路径的前面，可用于配置 CDN，不如 file-loader 设置的 publicPath 优先
-              // publicPath: 'https://cdn.cigaret.world/'
-            }
-          },
+          // {
+          //   loader: MiniCssExtractPlugin.loader,
+          //   options: {
+          //     // 添加在 CSS 文件中引用的其它资源路径的前面，可用于配置 CDN，不如 file-loader 设置的 publicPath 优先
+          //     // publicPath: 'https://cdn.cigaret.world/'
+          //   }
+          // },
+          'style-loader',
           'css-loader',
           'postcss-loader'
         ],

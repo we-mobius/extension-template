@@ -13,6 +13,7 @@
   },
   "permissions": [
     "tabs",
+    "activeTabs",
     "bookmarks",
     "contextMenus",
     "declarativeContent",

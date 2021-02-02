@@ -16,6 +16,7 @@ export const getDevelopmentConfig = () => ({
     index: './src/index.js',
     background: './src/background.js',
     content: './src/content.js',
+    inject: './src/inject.js',
     popup: './src/popup.js',
     options: './src/options.js',
     devtools: './src/devtools.js'
