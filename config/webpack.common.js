@@ -18,6 +18,7 @@ export const getCommonConfig = () => ({
       MobiusUtils$: rootResolvePath('src/libs/mobius-utils.js'),
       Interface: rootResolvePath('src/interface/'),
       Business: rootResolvePath('src/business/'),
+      FreeBusiness: rootResolvePath('src/business-free/'),
       'lit-html': rootResolvePath('node_modules/lit-html/')
     },
     symlinks: false
