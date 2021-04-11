@@ -1,2 +1,2 @@
 
-import './statics/styles/style.css'
+import 'Styles/style.css'
