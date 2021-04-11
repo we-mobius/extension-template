@@ -119,7 +119,10 @@
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
-  "sideEffects": false,
+  "sideEffects": [
+    "**/*.css",
+    "./statics/**"
+  ],
   "dependencies": {
     "rxjs": "^6.6.2"
   }

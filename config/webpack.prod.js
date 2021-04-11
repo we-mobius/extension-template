@@ -80,6 +80,9 @@ export const getProductionConfig = () => ({
   ],
   optimization: {
     minimize: true,
+    providedExports: true,
+    usedExports: true,
+    sideEffects: true,
     minimizer: [
       new TerserPlugin({
         parallel: true,
