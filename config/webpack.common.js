@@ -19,6 +19,9 @@ export const getCommonConfig = () => ({
       Interface: rootResolvePath('src/interface/'),
       Business: rootResolvePath('src/business/'),
       FreeBusiness: rootResolvePath('src/business-free/'),
+      Statics: rootResolvePath('src/statics/'),
+      Images: rootResolvePath('src/statics/images/'),
+      Styles: rootResolvePath('src/statics/styles/'),
       'lit-html': rootResolvePath('node_modules/lit-html/')
     },
     symlinks: false
